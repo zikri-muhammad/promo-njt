@@ -11,4 +11,8 @@ class DefaultController extends Controller
     {
         return Inertia::render('App');
     }
+
+    public function  about() {
+        return Inertia::render('About');
+    }
 }
