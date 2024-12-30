@@ -6,13 +6,13 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="bg-blue-600 p-4">
+        <nav className="sticky top-0 bg-white p-4">
             <div className="container mx-auto flex justify-between items-center">
-                <h1 className="text-white text-2xl">My App</h1>
+                <h1 className="text-black text-2xl">My App</h1>
                 <div className="block lg:hidden">
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="text-white focus:outline-none"
+                        className="text-black focus:outline-none"
                     >
                         <svg
                             className="w-6 h-6"
@@ -38,7 +38,7 @@ const Navbar = () => {
                     <li>
                         <Link
                             href="/"
-                            className="text-white hover:text-gray-300 block lg:inline-block"
+                            className="text-black hover:text-orange-500 block lg:inline-block"
                         >
                             Home
                         </Link>
@@ -46,7 +46,7 @@ const Navbar = () => {
                     <li>
                         <Link
                             href="/about"
-                            className="text-white hover:text-gray-300 block lg:inline-block"
+                            className="text-black hover:text-orange-500 block lg:inline-block"
                         >
                             About
                         </Link>
@@ -54,7 +54,7 @@ const Navbar = () => {
                     <li>
                         <Link
                             href="/contact"
-                            className="text-white hover:text-gray-300 block lg:inline-block"
+                            className="text-black hover:text-orange-500 block lg:inline-block"
                         >
                             Contact
                         </Link>

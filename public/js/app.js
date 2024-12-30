@@ -3896,11 +3896,11 @@ var Navbar = function Navbar() {
     isOpen = _useState2[0],
     setIsOpen = _useState2[1];
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("nav", {
-    className: "bg-blue-600 p-4",
+    className: "sticky top-0 bg-white p-4",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
       className: "container mx-auto flex justify-between items-center",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
-        className: "text-white text-2xl",
+        className: "text-black text-2xl",
         children: "My App"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
         className: "block lg:hidden",
@@ -3908,7 +3908,7 @@ var Navbar = function Navbar() {
           onClick: function onClick() {
             return setIsOpen(!isOpen);
           },
-          className: "text-white focus:outline-none",
+          className: "text-black focus:outline-none",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("svg", {
             className: "w-6 h-6",
             fill: "none",
@@ -3928,19 +3928,19 @@ var Navbar = function Navbar() {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
             href: "/",
-            className: "text-white hover:text-gray-300 block lg:inline-block",
+            className: "text-black hover:text-orange-500 block lg:inline-block",
             children: "Home"
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
             href: "/about",
-            className: "text-white hover:text-gray-300 block lg:inline-block",
+            className: "text-black hover:text-orange-500 block lg:inline-block",
             children: "About"
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
             href: "/contact",
-            className: "text-white hover:text-gray-300 block lg:inline-block",
+            className: "text-black hover:text-orange-500 block lg:inline-block",
             children: "Contact"
           })
         })]
@@ -4004,9 +4004,9 @@ __webpack_require__.r(__webpack_exports__);
 function App() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Components_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-      className: "flex justify-center items-center min-h-screen bg-gray-100",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.div, {
-        className: "bg-blue-500 p-4 rounded-lg",
+      className: "flex justify-center items-center min-h-screen bg-blue-500",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.div, {
+        className: "bg-white p-4 rounded-lg",
         initial: {
           opacity: 0
         },
@@ -4024,32 +4024,10 @@ function App() {
             opacity: 0
           }
         },
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.h1, {
-          className: "text-white text-3xl",
-          initial: {
-            opacity: 0
-          },
-          animate: {
-            opacity: 1
-          },
-          transition: {
-            duration: 2
-          },
-          children: "Hello,"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.h2, {
-          className: "text-white text-3xl",
-          initial: {
-            opacity: 0
-          },
-          animate: {
-            opacity: 1
-          },
-          transition: {
-            duration: 2,
-            delay: 0.5
-          },
-          children: "React with Tailwind & Framer Motion!"
-        })]
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
+          className: "text-white text-4xl font-bold",
+          children: "Welcome to My App"
+        })
       })
     })]
   });
