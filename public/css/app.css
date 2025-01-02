@@ -495,11 +495,12 @@ video {
 .justify-center {
   justify-content: center;
 }
-.justify-between {
-  justify-content: space-between;
-}
 .rounded-lg {
   border-radius: 0.5rem;
+}
+.rounded-b-\[40px\] {
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
 }
 .bg-blue-500 {
   --tw-bg-opacity: 1;

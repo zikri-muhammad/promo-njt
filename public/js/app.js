@@ -3896,57 +3896,69 @@ var Navbar = function Navbar() {
     isOpen = _useState2[0],
     setIsOpen = _useState2[1];
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("nav", {
-    className: "sticky top-0 bg-white p-4",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-      className: "container mx-auto flex justify-between items-center",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
+    className: "sticky top-0 bg-white p-4 rounded-b-[40px]",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "container mx-auto flex justify-center items-center ",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
         className: "text-black text-2xl",
         children: "My App"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-        className: "block lg:hidden",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
-          onClick: function onClick() {
-            return setIsOpen(!isOpen);
-          },
-          className: "text-black focus:outline-none",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("svg", {
-            className: "w-6 h-6",
-            fill: "none",
-            stroke: "currentColor",
-            viewBox: "0 0 24 24",
-            xmlns: "http://www.w3.org/2000/svg",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
-              strokeLinecap: "round",
-              strokeLinejoin: "round",
-              strokeWidth: "2",
-              d: "M4 6h16M4 12h16m-7 6h7"
-            })
-          })
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("ul", {
-        className: "".concat(isOpen ? "block" : "hidden", " lg:flex lg:space-x-4"),
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
-            href: "/",
-            className: "text-black hover:text-orange-500 block lg:inline-block",
-            children: "Home"
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
-            href: "/about",
-            className: "text-black hover:text-orange-500 block lg:inline-block",
-            children: "About"
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
-            href: "/contact",
-            className: "text-black hover:text-orange-500 block lg:inline-block",
-            children: "Contact"
-          })
-        })]
-      })]
+      })
     })
-  });
+  })
+  // <nav className="sticky top-0 bg-white p-4">
+  //     <div className="block lg:hidden">
+  //             <button
+  //                 onClick={() => setIsOpen(!isOpen)}
+  //                 className="text-black focus:outline-none"
+  //             >
+  //                 <svg
+  //                     className="w-6 h-6"
+  //                     fill="none"
+  //                     stroke="currentColor"
+  //                     viewBox="0 0 24 24"
+  //                     xmlns="http://www.w3.org/2000/svg"
+  //                 >
+  //                     <path
+  //                         strokeLinecap="round"
+  //                         strokeLinejoin="round"
+  //                         strokeWidth="2"
+  //                         d="M4 6h16M4 12h16m-7 6h7"
+  //                     ></path>
+  //                 </svg>
+  //             </button>
+  //         </div>
+  //         <ul
+  //             className={`${
+  //                 isOpen ? "block" : "hidden"
+  //             } lg:flex lg:space-x-4`}
+  //         >
+  //             <li>
+  //                 <Link
+  //                     href="/"
+  //                     className="text-black hover:text-orange-500 block lg:inline-block"
+  //                 >
+  //                     Home
+  //                 </Link>
+  //             </li>
+  //             <li>
+  //                 <Link
+  //                     href="/about"
+  //                     className="text-black hover:text-orange-500 block lg:inline-block"
+  //                 >
+  //                     About
+  //                 </Link>
+  //             </li>
+  //             <li>
+  //                 <Link
+  //                     href="/contact"
+  //                     className="text-black hover:text-orange-500 block lg:inline-block"
+  //                 >
+  //                     Contact
+  //                 </Link>
+  //             </li>
+  //         </ul>
+  // </nav>
+  ;
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Navbar);
 
